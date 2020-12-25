@@ -1,0 +1,5 @@
+# riproute_table_client.txt
+#
+# SubnetAddr    SubnetMask      Iface    Gateway
+0.0.0.0         0.0.0.0         eth1     192.100.100.102
+

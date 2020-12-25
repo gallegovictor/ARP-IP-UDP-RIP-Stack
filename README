@@ -1,0 +1,15 @@
+
+MEJORAS:
+
+
+1.Tanto cliente como servidor al pedir toda la tabla utilizan direccion multicast
+2.Envío  de  mensajes  RIP Requestbroadcast/broadcastde  subred/multicastpara solicitar la tabla de rutas al iniciar el servidor RIPv2
+3.Implementación  de  los  dos  tipos  de  operación  RIP Request(en cliente  y/o servidor):
+4.Envio de segundo ARP si no se recibio uno a los 3 segundos
+5.Añadir bytes de rellenoen tramas Ethernetinferiores altamaño mínimo.
+6.Intento de mensajes periodicos por hilos, pero me debe dar error porque ya esta en uso
+
+
+
+BUG: Por alguna razon da igual cuanto timeout le metamos al udp_recv en el rip_serv siempre espera infinito, incluso cuando
+el udp_client si que sale de esa itineracion
